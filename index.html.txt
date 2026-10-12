@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Slop's Fables</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0d0f12;
+      color: #f3f4f6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 32px 16px;
+    }
+    .container {
+      width: 100%;
+      max-width: 580px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .banner {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+      border: 1px solid #232730;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 6px;
+    }
+    p.subtitle {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      text-align: center;
+      margin-top: -6px;
+      margin-bottom: 12px;
+    }
+    .links-grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .link-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      border-radius: 10px;
+      background: #171a21;
+      color: #f9fafb;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.98rem;
+      border: 1px solid #262b36;
+      transition: all 0.2s ease;
+    }
+    .link-card:hover {
+      background: #232936;
+      border-color: #4b5563;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="banner.png" alt="AI Slop's Fables" class="banner">
+    
+    <h1>AI Slop's Fables</h1>
+    <p class="subtitle">Classic Aesop fables adapted through generative video.</p>
+
+    <div class="links-grid">
+      <a href="https://youtube.com/@AISlopsFable" class="link-card" target="_blank" rel="noopener">YouTube (@AISlopsFable)</a>
+      <a href="https://tiktok.com/@aislopsfables" class="link-card" target="_blank" rel="noopener">TikTok (@aislopsfables)</a>
+      <a href="https://instagram.com/aislopsfable" class="link-card" target="_blank" rel="noopener">Instagram (@aislopsfable)</a>
+      <a href="https://facebook.com/AISlopsFables" class="link-card" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://threads.net/@aislopsfable" class="link-card" target="_blank" rel="noopener">Threads (@aislopsfable)</a>
+      <a href="https://x.com/AISlopsFable" class="link-card" target="_blank" rel="noopener">X / Twitter (@AISlopsFable)</a>
+      <a href="https://linkedin.com/company/aislopsfables" class="link-card" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</body>
+</html>
