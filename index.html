@@ -3,37 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>AI Slop's Fables — Classic Tales Reimagined</title>
-  <meta name="description" content="Classic Aesop fables adapted through generative video. Follow on YouTube, TikTok, Instagram, and more.">
-
-  <!-- Open Graph & Social Sharing Cards -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aislopsfables.com/">
-  <meta property="og:title" content="AI Slop's Fables">
-  <meta property="og:description" content="Classic Aesop fables adapted through generative video.">
-  <meta property="og:image" content="https://aislopsfables.com/banner.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Slop's Fables">
-  <meta name="twitter:description" content="Classic Aesop fables adapted through generative video.">
-  <meta name="twitter:image" content="https://aislopsfables.com/banner.jpg">
-
+  <title>AI Slop's Fables</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: #0b0d10;
+      background-color: #0d0f12;
       color: #f3f4f6;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      padding: 36px 16px;
+      padding: 32px 16px;
     }
     .container {
       width: 100%;
-      max-width: 520px;
+      max-width: 580px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -42,94 +27,48 @@
     .banner {
       width: 100%;
       aspect-ratio: 16 / 9;
-      border-radius: 16px;
+      border-radius: 14px;
       object-fit: cover;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+      border: 1px solid #232730;
     }
     h1 {
-      font-size: 1.75rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
+      font-size: 1.6rem;
+      font-weight: 700;
       text-align: center;
-      margin-top: 4px;
+      margin-top: 6px;
     }
     p.subtitle {
       font-size: 0.95rem;
       color: #9ca3af;
       text-align: center;
-      line-height: 1.4;
-      margin-bottom: 8px;
+      margin-top: -6px;
+      margin-bottom: 12px;
     }
-
-    /* Primary Share Button */
-    .share-btn {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 12px;
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
-      color: #ffffff;
-      font-weight: 600;
-      font-size: 0.95rem;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
-      transition: all 0.2s ease;
-      margin-bottom: 8px;
-    }
-    .share-btn:hover {
-      background: linear-gradient(135deg, #1d4ed8, #1e40af);
-      transform: translateY(-2px);
-    }
-
     .links-grid {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 11px;
+      gap: 12px;
     }
     .link-card {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       padding: 14px 20px;
-      border-radius: 12px;
-      background: #14171d;
+      border-radius: 10px;
+      background: #171a21;
       color: #f9fafb;
       text-decoration: none;
       font-weight: 600;
       font-size: 0.98rem;
-      border: 1px solid #232731;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid #262b36;
+      transition: all 0.2s ease;
     }
     .link-card:hover {
-      background: #1c212a;
-      border-color: #3b4252;
+      background: #232936;
+      border-color: #4b5563;
       transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-    }
-    .link-card span.handle {
-      font-size: 0.85rem;
-      color: #9ca3af;
-      font-weight: 400;
-    }
-
-    /* Brand Accent Highlights on Hover */
-    .link-card.yt:hover { border-color: #ff0000; }
-    .link-card.tt:hover { border-color: #00f2fe; }
-    .link-card.ig:hover { border-color: #e1306c; }
-    .link-card.fb:hover { border-color: #1877f2; }
-    .link-card.li:hover { border-color: #0a66c2; }
-    .link-card.x:hover  { border-color: #ffffff; }
-
-    footer {
-      margin-top: 24px;
-      font-size: 0.8rem;
-      color: #6b7280;
     }
   </style>
 </head>
@@ -138,67 +77,17 @@
     <img src="banner.jpg" alt="AI Slop's Fables" class="banner">
     
     <h1>AI Slop's Fables</h1>
-    <p class="subtitle">Classic Aesop fables adapted through generative AI storybook video.</p>
-
-    <!-- Share trigger -->
-    <button class="share-btn" onclick="shareWebsite()">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8m-4-6-4-4-4 4m4-4v13"/></svg>
-      <span id="share-text">Share Website</span>
-    </button>
+    <p class="subtitle">Classic Aesop fables adapted through generative video.</p>
 
     <div class="links-grid">
-      <a href="https://youtube.com/@AISlopsFable" class="link-card yt" target="_blank" rel="noopener">
-        <span>YouTube</span>
-        <span class="handle">@AISlopsFable</span>
-      </a>
-      <a href="https://tiktok.com/@aislopsfables" class="link-card tt" target="_blank" rel="noopener">
-        <span>TikTok</span>
-        <span class="handle">@aislopsfables</span>
-      </a>
-      <a href="https://instagram.com/aislopsfable" class="link-card ig" target="_blank" rel="noopener">
-        <span>Instagram</span>
-        <span class="handle">@aislopsfable</span>
-      </a>
-      <a href="https://facebook.com/aislopsfables" class="link-card fb" target="_blank" rel="noopener">
-        <span>Facebook</span>
-        <span class="handle">AI Slop's Fables</span>
-      </a>
-      <a href="https://threads.net/@aislopsfable" class="link-card" target="_blank" rel="noopener">
-        <span>Threads</span>
-        <span class="handle">@aislopsfable</span>
-      </a>
-      <a href="https://x.com/AISlopsFable" class="link-card x" target="_blank" rel="noopener">
-        <span>X / Twitter</span>
-        <span class="handle">@AISlopsFable</span>
-      </a>
-      <a href="https://linkedin.com/company/ai-slop-s-fables" class="link-card li" target="_blank" rel="noopener">
-        <span>LinkedIn</span>
-        <span class="handle">Company Page</span>
-      </a>
+      <a href="https://youtube.com/@AISlopsFable" class="link-card" target="_blank" rel="noopener">YouTube (@AISlopsFable)</a>
+      <a href="https://tiktok.com/@aislopsfables" class="link-card" target="_blank" rel="noopener">TikTok (@aislopsfables)</a>
+      <a href="https://instagram.com/aislopsfable" class="link-card" target="_blank" rel="noopener">Instagram (@aislopsfable)</a>
+      <a href="https://facebook.com/aislopsfables" class="link-card" target="_blank" rel="noopener">Facebook (AI Slop's Fables)</a>
+      <a href="https://threads.net/@aislopsfable" class="link-card" target="_blank" rel="noopener">Threads (@aislopsfable)</a>
+      <a href="https://x.com/AISlopsFable" class="link-card" target="_blank" rel="noopener">X / Twitter (@AISlopsFable)</a>
+      <a href="https://linkedin.com/company/ai-slop-s-fables" class="link-card" target="_blank" rel="noopener">LinkedIn (AI Slop's Fables)</a>
     </div>
-
-    <footer>
-      &copy; AI Slop's Fables. All rights reserved.
-    </footer>
   </div>
-
-  <script>
-    function shareWebsite() {
-      const shareData = {
-        title: "AI Slop's Fables",
-        text: "Explore classic Aesop fables adapted through generative AI video!",
-        url: window.location.href
-      };
-
-      if (navigator.share) {
-        navigator.share(shareData).catch(() => {});
-      } else {
-        navigator.clipboard.writeText(window.location.href);
-        const label = document.getElementById("share-text");
-        label.innerText = "Link Copied to Clipboard!";
-        setTimeout(() => { label.innerText = "Share Website"; }, 2500);
-      }
-    }
-  </script>
 </body>
 </html>
